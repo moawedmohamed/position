@@ -1,0 +1,412 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* start nav bar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 1px 10px;
+    padding: 8px 13px 0px 13px;
+    
+    
+}
+.nav-left{
+    display: flex;
+}
+.nav-left .fa-facebook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    font-size: 32px;
+
+} 
+
+.search.fa.search{
+    color: #921a1a;
+    position: relative;
+    position: absolute;
+    font-size: 10px; 
+    right :15px;
+    top: 10px;   
+    
+
+}
+.search{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.search input{
+    border:none;
+    margin-left: 5px ;
+    padding: 7px 16px 9px 36px;
+    background-color: #f3efef;
+    border-radius: 50px;
+    font-size: 15px;
+    height: 40px;
+}
+.search i{
+     position: absolute;
+    left: 10px; /* Position the icon inside the input field */
+    color: black;
+}
+.search input:focus{
+    outline: rgb(252, 247, 247);
+}
+.nav-middle{
+    display: flex;
+    align-items: flex-end;
+}
+.nav-middle a{
+    text-decoration: none;
+    color: #65676b;
+    font-size: 25px;
+    margin: 0px 10px;
+    border: 20px;
+    padding: 10px 20px;
+    /* color: blue; */
+    
+}
+.nav-middle .active i {
+    color: blue; /* Change the color of the icon to blue */
+}
+.active{
+    display: flex;
+    justify-content: center;
+    align-items: end ;
+    color: blue;
+/* background-color: blue; */
+}
+.nav.right{
+    display: flex;
+    align-items: end;
+    
+}
+.nav.right.profile p{
+    color: black;
+    font-size: bold;
+    margin-left: 3px;
+}
+.profile {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+}
+
+.profile img {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 10px; /* Add some space between the image and the text */
+}
+
+.profile p {
+    font-style: bold;
+    margin-bottom: 15px; /* Remove default margin from the paragraph */
+}
+
+.messenger{
+    color: aliceblue;
+}
+.nav.right a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+.sec_all{
+    display: flex;
+    justify-content: left;
+    background-color: #f0f2f5   ;
+}
+/* .left_side{
+    margin: 10px;
+    background-color: #f0f2f5;
+    width: 350px;
+    /* overflow: 100vh;
+    overflow: scroll; */
+
+    /* .left_side :hover {
+
+        
+          overflow: scroll;
+       
+       
+        }
+     */
+     .left_side {
+    /* Set the desired height and other styles */
+    height: 600px;
+    overflow: hidden; /* Hide the scrollbar initially */
+    transition: overflow 0.3s ease; /* Add a smooth transition effect */
+
+    /* Add hover effect to reveal the scrollbar */
+    &:hover {
+        overflow: scroll; /* Show the scrollbar on hover */
+    }
+} 
+.left_side li{
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 10px;
+    border-radius: 50px;
+}
+.left_side img{
+    width: 25px;
+    height: 35px;
+    border-radius: 59px;
+}
+.left_side p{
+    color: black;
+    font-size: 15px;
+    font-size: bold;
+    margin-left: 3px;
+}
+.middle{
+    padding: 0 70px;
+    margin-top: 0px;
+}
+.container{
+    display: flex;
+    margin-top: 20px;
+}
+.fristleft{
+    height: 205px;
+    background-color: white;
+    /* box-shadow: 0 0 5px 5px; */
+    margin-left: 150px;
+    /* margin-right: 100px; */
+    border-radius: 10px;
+    position: relative;
+
+}
+.fristleft2{
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    /* overflow: scroll; */
+    margin:7px;
+    border-radius: 10px;
+    /* box-shadow: 0 0 5px 5px; */
+
+    padding: -5px;
+}
+.icon{
+    font-size: 30px;
+    border-radius: 50px;
+    /* padding: 10px; */
+    padding-right: 2px;
+    background-color: blue;
+    color: white;
+    border-radius: 50%;
+    padding: 4px;
+    border: solid 4px white;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.icon a {
+    color: white; /* Set the icon color to white */
+    text-decoration: none; /* Remove underline from the link */
+}
+.fristleft p{
+    display: flex;
+    justify-content: center;
+}
+.fristimg2{
+    border-radius: 10px;
+    padding-bottom: 0px;
+    margin: px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fristimg{
+    /* width: 100%; */
+    border-radius: 10px;
+
+}
+.fristleft2{
+    position: relative;
+}
+.small{
+    position: absolute;
+    top: 11px;
+    left: 16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: solid 4px blue;
+}
+.fristimg2{
+    height: 100%;
+    /* position: relative; */
+}
+.fristimg2 {
+    height: 100%;
+    /* position: relative; */
+    width: 100%;
+}
+
+.fristimg2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+.secondimg{
+    border-radius: 5px;
+}
+.fristimg2 p {
+    position: absolute;
+    bottom: 10px;
+    left: 8px;
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 5px; 
+     border-radius: 5px; 
+
+}
+.container {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+    justify-content: space-between; /* Add space between the text and icons */
+}
+
+.contact_icons p {
+    margin-right: 10px; /* Remove default margin */
+    padding-right: 20px; /* Add some padding to the right of the text */
+}
+
+.icons2 i {
+    margin-left: 10px; 
+    gap: 60px;
+}
+.right_side li{
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 10px;
+    border-radius: 50px;
+}
+.right_side img{
+    width: 25px;
+    height: 35px;
+    border-radius: 59px;
+}
+.right_side p{
+    color: black;
+    font-size: 15px;
+    font-size: bold;
+    margin-left: 3px;
+}
+.right_side {
+    /* Set the desired height and other styles */
+    height: 600px;
+    overflow: hidden; /* Hide the scrollbar initially */
+    transition: overflow 0.3s ease; /* Add a smooth transition effect */
+
+    /* Add hover effect to reveal the scrollbar */
+    &:hover {
+        overflow: scroll; /* Show the scrollbar on hover */
+    }
+} 
+.right_side li{
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 10px;
+    border-radius: 50px;
+}
+    .search2 {
+        position: relative;
+        display: flex;
+        align-items: center;
+        background-color: white; /* Set background color to white */
+        padding: 10px;
+        border-radius: 5px; /* Optional: for rounded corners */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: for a slight shadow effect */
+        margin: 20px auto; /* Center the container and add vertical margin */
+        width: 80%; /* Adjust the width as needed */
+        max-width: 500px; /* Optional: set a maximum width */
+    }
+
+.search2 input {
+    position: relative;
+    border:none ;
+    display: flex;
+    margin: 20px  auto;
+    padding: 10px;
+    width: 80%;
+    /* max-width: 400px; */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color:  #e4e4e4;
+    border-radius: 20px;
+}
+.search2 input:focus{
+    outline: rgb(111, 7, 7);
+}
+.search2 img {
+    background-color: white;
+    position: absolute;
+    left: 10px; /* وضع الأيقونة داخل حقل الإدخال */
+    color: black;
+    /* border-radius: 50px; */
+}
+
+.search2 .small {
+    border-radius: 0px;
+}
+
+.search2 small {
+    width: 100%; /* تصحيح الخطأ: 100% بدلاً من 100%px */
+    background-color: white;
+}
+
+.small4 img {
+    border-radius: 0px;
+    background-color: white;
+    padding: 200px;
+}
+
+/* محدد أكثر تحديدًا للصورة الأولى */
+/* #small4 img:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: relative;
+
+    left: 10px;
+    color: black;
+    /* border-radius: 50px; */
+    /* width: 500px; */
+/* } */
+
+/* محدد أكثر تحديدًا للصورة الثانية */
+/* #small4 img:nth-child(2) {
+     position: absolute;
+    border-radius: 0px;
+    background-color: white;
+    padding: 200px;
+    width: 100px;
+} */ */
+ .Icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
