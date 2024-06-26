@@ -16,14 +16,21 @@ nav{
     
 }
 .nav-left{
+    background-color: white;
+    position: fixed;
     display: flex;
+    margin-right: 880px;
+    width: 100%;
+    top: 0;
+    height: 70px;
+    z-index: 9999;
 }
 .nav-left .fa-facebook{
     display: flex;
     justify-content: center;
     align-items: center;
     color: blue;
-    font-size: 32px;
+    font-size: 40px;
 
 } 
 
@@ -43,6 +50,7 @@ nav{
     align-items: center;
 }
 .search input{
+    margin-top: 10px;
     border:none;
     margin-left: 5px ;
     padding: 7px 16px 9px 36px;
@@ -60,13 +68,21 @@ nav{
     outline: rgb(252, 247, 247);
 }
 .nav-middle{
+    object-fit: cover;
+    margin-top: 4px;
+    position: fixed;
     display: flex;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
+    margin-left:200px;
+    /* background-color: white; */
+    width: 50%;
+    z-index: 99999999;
 }
 .nav-middle a{
     text-decoration: none;
     color: #65676b;
-    font-size: 25px;
+    font-size: 30px;
     margin: 0px 10px;
     border: 20px;
     padding: 10px 20px;
@@ -84,16 +100,20 @@ nav{
 /* background-color: blue; */
 }
 .nav.right{
+    background-color: white;    /* margin-top: 60px; */
+    position: fixed;
     display: flex;
     align-items: end;
-    
+    margin-left: 1230px;
+    z-index: 9999;
 }
 .nav.right.profile p{
     color: black;
-    font-size: bold;
+    font-weight: bold;
     margin-left: 3px;
 }
 .profile {
+    background-color: white;
     display: flex;
     align-items: center; /* Align items vertically centered */
 }
@@ -103,12 +123,14 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     margin-right: 10px; /* Add some space between the image and the text */
 }
 
 .profile p {
-    font-style: bold;
+    font-weight: bold;
     margin-bottom: 15px; /* Remove default margin from the paragraph */
 }
 
@@ -118,7 +140,7 @@ nav{
 .nav.right a{
     text-decoration: none;
     color: black;
-    background-color: white;
+    background-color: rgb(228, 228, 228);
     font-size: 18px;
     width: 40px;
     height: 40px;
@@ -126,34 +148,19 @@ nav{
     border-radius: 50%;
     display: flex;
     justify-content: center;
+    align-items: center;    
 }
 .sec_all{
+    margin-top: 70px;
     display: flex;
     justify-content: left;
     background-color: #f0f2f5   ;
 }
-/* .left_side{
-    margin: 10px;
-    background-color: #f0f2f5;
-    width: 350px;
-    /* overflow: 100vh;
-    overflow: scroll; */
-
-    /* .left_side :hover {
-
-        
-          overflow: scroll;
-       
-       
-        }
-     */
      .left_side {
-    /* Set the desired height and other styles */
-    height: 600px;
+    position: fixed;
+    height: 100vh;
     overflow: hidden; /* Hide the scrollbar initially */
-    transition: overflow 0.3s ease; /* Add a smooth transition effect */
-
-    /* Add hover effect to reveal the scrollbar */
+    transition: overflow 0.3s ease; 
     &:hover {
         overflow: scroll; /* Show the scrollbar on hover */
     }
@@ -172,19 +179,25 @@ nav{
 .left_side p{
     color: black;
     font-size: 15px;
-    font-size: bold;
+    font-weight: bold;
     margin-left: 3px;
 }
 .middle{
+    /* background-color: white; */
+
     padding: 0 70px;
-    margin-top: 0px;
+    margin-top: -10px;
+    z-index: 7777;
 }
 .container{
+    /* background-color: white; */
+
+    /* position: fixed; */
     display: flex;
     margin-top: 20px;
 }
 .fristleft{
-    height: 205px;
+    height: 240px;
     background-color: white;
     /* box-shadow: 0 0 5px 5px; */
     margin-left: 150px;
@@ -194,8 +207,9 @@ nav{
 
 }
 .fristleft2{
+    position: relative;
     width: 100%;
-    height: 200px;
+    height: 240px;
     background-color: white;
     /* overflow: scroll; */
     margin:7px;
@@ -204,7 +218,15 @@ nav{
 
     padding: -5px;
 }
+.fristleft2 p{
+    /* position: absolute; */
+    margin-top:-30px;
+    font-size: 20px;
+    color: white;
+    margin-left: 5px;
+}
 .icon{
+
     font-size: 30px;
     border-radius: 50px;
     /* padding: 10px; */
@@ -215,7 +237,7 @@ nav{
     padding: 4px;
     border: solid 4px white;
     position: absolute;
-    top: 65%;
+    top: 56%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
@@ -224,8 +246,12 @@ nav{
     text-decoration: none; /* Remove underline from the link */
 }
 .fristleft p{
+    position: absolute;
     display: flex;
     justify-content: center;
+    margin-left: 12px;
+    margin-top: 10px;
+    font-weight: bold;
 }
 .fristimg2{
     border-radius: 10px;
@@ -240,9 +266,6 @@ nav{
     /* width: 100%; */
     border-radius: 10px;
 
-}
-.fristleft2{
-    position: relative;
 }
 .small{
     position: absolute;
@@ -281,18 +304,86 @@ nav{
      border-radius: 5px; 
 
 }
-.container {
+.fristimg3{
+    position: fixed;
+    margin-left: 3px;
     display: flex;
-    align-items: center; /* Align items vertically centered */
+    /* align-items: center; */
+    margin-top: 20px;
+    color: #050505;
+    border-radius: 8px;
+    /* padding: 5px 50px 5px 5px; */
+}
+.secondimg{
+    position: fixed;
+    margin-left: 3px;
+    /* display: flex; */
+    /* align-items: center; */
+    margin-top: 80px;
+    color: #050505;
+    border-radius: 8px;
+}
+.secondimg h3{
+    margin-top: -150px;
+}
+.sponsored h2{
+    position: fixed;
+    margin-left: 200px;
+    color: #65676b;
+    font-size: 20px;
+    margin-top: -10px;
+}
+
+.ad h3{
+    position: fixed;
+    margin-left: -60px;
+}
+.add h3{
+    margin-top: 50px;
+    position: fixed;
+    margin-left: -60px;
+}
+.sponsored div {
+    position: sticky;
+    margin-left: 200px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    color: #050505;
+    border-radius: 8px;
+    padding: 5px 50px 5px 5px;
+}
+
+.sponsored img{
+    /* margin: 20px; */
+    /* position: fixed; */
+    border-radius: 8px;
+    width: 120px;
+    height: 70px;
+}
+
+/* .sponsored h3{
+    position: fixed;
+    margin-left: 130px;
+    font-size: 15px;
+    margin-top: 100px;
+} */
+.container {
+    /* position: fixed; */
+    display: flex;
+    align-items: center; 
     justify-content: space-between; /* Add space between the text and icons */
 }
 
 .contact_icons p {
+    font-size: 200px;
+    margin-left: 200px;
     margin-right: 10px; /* Remove default margin */
     padding-right: 20px; /* Add some padding to the right of the text */
 }
 
 .icons2 i {
+    color: black;
     margin-left: 10px; 
     gap: 60px;
 }
@@ -309,12 +400,14 @@ nav{
 }
 .right_side p{
     color: black;
-    font-size: 15px;
+    font-size: 20px;
     font-size: bold;
     margin-left: 3px;
 }
 .right_side {
-    /* Set the desired height and other styles */
+    margin-top: 50px;
+    position: fixed;
+    margin-left: 200px;
     height: 600px;
     overflow: hidden; /* Hide the scrollbar initially */
     transition: overflow 0.3s ease; /* Add a smooth transition effect */
@@ -332,44 +425,45 @@ nav{
 }
     .search2 {
         position: relative;
-        display: flex;
-        align-items: center;
-        background-color: white; /* Set background color to white */
-        padding: 10px;
-        border-radius: 5px; /* Optional: for rounded corners */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: for a slight shadow effect */
-        margin: 20px auto; /* Center the container and add vertical margin */
-        width: 80%; /* Adjust the width as needed */
-        max-width: 500px; /* Optional: set a maximum width */
-    }
 
+        background:white;
+        border-radius: 10px;
+        box-shadow: 0 0 5px 5px #ddd;
+        margin: 20px 0px;
+        padding-top: 5px;
+        width: 84%;
+        margin-left: 145px;
+        padding: 30px;
+    }
 .search2 input {
-    position: relative;
-    border:none ;
-    display: flex;
-    margin: 20px  auto;
-    padding: 10px;
-    width: 80%;
-    /* max-width: 400px; */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    background-color:  #e4e4e4;
-    border-radius: 20px;
+    outline: none;
+    width: 96%;
+    border: none;
+    border-radius: 50px;
+    background:#f0f2f5;
+    padding:13px;
+    margin-left: 30px;
+    /* margin: 10px; */
+    margin-top: -80px;
+
 }
 .search2 input:focus{
-    outline: rgb(111, 7, 7);
+    background-color: rgba(241, 241, 241, 0.834);
 }
 .search2 img {
     background-color: white;
     position: absolute;
-    left: 10px; /* وضع الأيقونة داخل حقل الإدخال */
+    left: 20px; /* وضع الأيقونة داخل حقل الإدخال */
     color: black;
     /* border-radius: 50px; */
+    margin-top: -35px;
 }
 
-.search2 .small {
-    border-radius: 0px;
+.search2 .small2 {
+    border-radius: 50%;
+    width:35px;
+    height:35px;
+    margin-right: 10px;
 }
 
 .search2 small {
@@ -383,30 +477,195 @@ nav{
     padding: 200px;
 }
 
-/* محدد أكثر تحديدًا للصورة الأولى */
-/* #small4 img:first-child {
+.under {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+.under i{
+    font-size: 25px;
+}
+.under a{
+    font-size: 25px;
+}
+.fa-video{
+    color: #f3425f;
+}
+.fa-images{
+    color: #45bd62;
+}
+.fa-laugh{
+    color: #f7b928;
+}
+.under .firstu .caption
+{
+    margin:5px 0 0 10px;
+    color:rgb(94 94 94);
+    text-decoration: none;
+}
+.Fpost{
     background-color: white;
-    position: relative;
+    padding:20px 20px 5px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px #ddd;
+    margin-top: 20px;
+    margin-left: 140px;
+}
 
-    left: 10px;
+.postDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.postDetail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.postDetail img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+} 
+.postDetail  p{
+    color: #898e94;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.bigpost{
+    background-color: white;
+    box-shadow: 0 0 5px 5px #ddd;
+    margin-left: 140px;
+    border-radius: 5px;
+}
+.firstim{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+
+}
+.firstim img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-left: 25px;
+}   
+.firstim h1{
+    color: #898e94;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.secondim img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.firstim div{
+    margin-top: 24px;
+    margin-right: 600px;
+}
+.fa-ellipsis-h{
+    margin-right: 20px;
+}
+
+.secondim p{
     color: black;
-    /* border-radius: 50px; */
-    /* width: 500px; */
-/* } */
+    font-size: 20px;
+    margin: 20px 8px;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
 
-/* محدد أكثر تحديدًا للصورة الثانية */
-/* #small4 img:nth-child(2) {
-     position: absolute;
-    border-radius: 0px;
-    background-color: white;
-    padding: 200px;
-    width: 100px;
-} */ */
- .Icons{
+.reacts{
+    padding: 20px 50px 0;
+    border-top: 1px solid #898e94;
+    margin: 20px 0;
     display: flex;
-    justify-content: center;
     align-items: center;
- }
+    justify-content: space-between;
+    color: #898e94;
+
+}
+
+.reacts i{
+    color: #898e94;
+    margin-right: 5px;
+}
+@media  only screen and (max-width:1080px){
+
+    .middle{
+        padding: 0px 50px;
+    }
+    .left_side{
+        display: none;
+    }
+    .search input{
+        width: 50px;
+    }
+
+}
+
+
+@media  only screen and (max-width:882px){
+
+    .middle{
+        padding: 0px 3px;
+    }
+    .right_side{
+        display: none;
+    }
+    .nav-middle{
+        display: none;
+    }
+}
+.bigpost{
+    background-color: white;
+    box-shadow: 0 0 5px 5px #ddd;
+    margin-left: 140px;
+    border-radius: 5px;
+}
+.firstim{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+
+}
+.firstim img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-left: 25px;
+}   
+.firstim h1{
+    color: #898e94;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.secondim img{
+    width: 95%;
+    height: 340px;
+    object-fit: cover;
+    margin-left: 20px;
+}
+.firstim div{
+    margin-top: 24px;
+    margin-right: 600px;
+}
+.fa-ellipsis-h{
+    margin-right: 20px;
+}
+
+.secondim p{
+    color: black;
+    font-size: 20px;
+    margin: 20px 8px;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
